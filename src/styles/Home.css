@@ -1,0 +1,46 @@
+.home {
+    padding-top: 4rem; 
+    /* text-align: center; */
+    /* background: #f0f0f5;  */
+    /* min-height: 100vh;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s ease;
+  }
+  
+  .home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+    opacity: 0; 
+    transform: translateY(-20px); 
+    animation: fadeInUp 1s forwards; 
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .home-description {
+    font-size: 1.25rem;
+    color: #666;
+    max-width: 800px; 
+    margin: 0 auto;
+    line-height: 1.5;
+    transition: color 0.5s ease; 
+  }
+  
+  .home-description:hover {
+    color: #333;
+  }
+  
+  .home:hover {
+    background: #e0e0e5; 
+  }
+  
